@@ -5,4 +5,9 @@
   color: white;
   text-align: center;
 }
-
+.footer a {
+  color: white;
+}
+.footer a:is(:hover, :focus) {
+  color: hsl(0deg, 0%, 80%);
+}

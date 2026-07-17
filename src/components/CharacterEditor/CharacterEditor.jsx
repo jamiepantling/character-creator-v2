@@ -35,9 +35,11 @@ function App() {
           <h1 className={styles.title}>Create your Character</h1>
           <p className={styles.description}>
             Customize your character's look and style using the
-            controls below. What sort of adventure will you embark on?{' '}
+            controls below. What sort of adventure will you embark
+            on?{' '}
           </p>
         </header>
+        <div className={styles.perspectiveBar}></div>
         <div className={styles.controlColumn}>
           <ControlPane
             title="Bodies"
@@ -76,18 +78,18 @@ function App() {
             handleSelectOption={setClothesColor}
           />
         </div>
-      </MaxWidthWrapper>
 
-      <div className={styles.characterWrapper}>
-        <Character
-          body={body}
-          head={head}
-          face={face}
-          accessory={accessory}
-          skinColor={skinColor}
-          clothesColor={clothesColor}
-        />
-      </div>
+        <div className={styles.characterWrapper}>
+          <Character
+            body={body}
+            head={head}
+            face={face}
+            accessory={accessory}
+            skinColor={skinColor}
+            clothesColor={clothesColor}
+          />
+        </div>
+      </MaxWidthWrapper>
     </main>
   );
 }
